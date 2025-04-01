@@ -1,9 +1,12 @@
+/home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5/object_detector.py
 /home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5/image_publisher.py
 /home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5/__init__.py
+/home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5/__pycache__/object_detector.cpython-310.pyc
 /home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5/__pycache__/image_publisher.cpython-310.pyc
 /home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5/__pycache__/__init__.cpython-310.pyc
 /home/albert/ros2_ws/install/task_5/share/ament_index/resource_index/packages/task_5
 /home/albert/ros2_ws/install/task_5/share/task_5/package.xml
+/home/albert/ros2_ws/install/task_5/share/task_5/launch/object_detector_launch.py
 /home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5-0.0.0-py3.10.egg-info/entry_points.txt
 /home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5-0.0.0-py3.10.egg-info/PKG-INFO
@@ -12,3 +15,4 @@
 /home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5-0.0.0-py3.10.egg-info/top_level.txt
 /home/albert/ros2_ws/install/task_5/lib/python3.10/site-packages/task_5-0.0.0-py3.10.egg-info/requires.txt
 /home/albert/ros2_ws/install/task_5/lib/task_5/image_publisher
+/home/albert/ros2_ws/install/task_5/lib/task_5/object_detector

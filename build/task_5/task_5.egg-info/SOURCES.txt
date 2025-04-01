@@ -8,9 +8,11 @@ setup.py
 ../../build/task_5/task_5.egg-info/requires.txt
 ../../build/task_5/task_5.egg-info/top_level.txt
 ../../build/task_5/task_5.egg-info/zip-safe
+launch/object_detector_launch.py
 resource/task_5
 task_5/__init__.py
 task_5/image_publisher.py
+task_5/object_detector.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

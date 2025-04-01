@@ -11,9 +11,9 @@ class ImagePublisher(Node):
         self.bridge = CvBridge()
         self.publisher = self.create_publisher(Image ,'video_data', 10)
         self.address_to_video = address_to_video
-        self.imageProcess()
+        self.processImage()
         
-    def imageProcess(self):
+    def processImage(self):
         # read video
         cap = cv.VideoCapture(self.address_to_video)
         
