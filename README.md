@@ -22,6 +22,8 @@ Each folder contains exercises, scripts, and notes corresponding to that week's 
 - Jupyter Notebook
 - `colcon` build system
 - `rviz`, `gazebo`, and other ROS packages as listed in the setup
+- [`Purdue-ME597/sim_ws`](https://github.com/Purdue-ME597/sim_ws)
+
 
 See `0-Setup` for the complete dependency list and installation steps.
 
