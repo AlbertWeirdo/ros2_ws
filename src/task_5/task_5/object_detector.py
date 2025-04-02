@@ -23,11 +23,11 @@ class ObjectDetector(Node):
         self.bridge = CvBridge()
         
     def objectDetect(self,msg):
-        
-        # step 1: Detect red color objects using hsv mask
-        # step 2: Find contour and identify triangle
-        # step 3: Draw box
-        
+        """
+        step 1: Detect red color objects using hsv mask
+        step 2: Find contour and identify triangle
+        step 3: Draw box
+        """
         # When target's features include color, it'd better to use hsv masking
         # Otherwise, gray scale + edge detection would be better.
         
