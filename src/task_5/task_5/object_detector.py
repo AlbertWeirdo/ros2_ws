@@ -32,8 +32,7 @@ class ObjectDetector(Node):
         # Otherwise, gray scale + edge detection would be better.
         
         if msg != self.image.ros2:
-        
-            self.get_logger().info(f'Received new image : {msg}')
+            # self.get_logger().info(f'Received new image : {msg}')
             self.image.ros2 = msg
             self.image.cv2 = self.bridge.imgmsg_to_cv2(msg, desired_encoding='8UC3')
             
@@ -98,7 +97,8 @@ class ObjectDetector(Node):
                 # compute triangle's centroid
                 triangle_center_x = np.mean(approx[:, 0, 0])
                 triangle_center_y = np.mean(approx[:, 0, 1])
-                print(f'triangle\'s centroid is {triangle_center_x - x, triangle_center_y - y} relative to the top left corner of the frame')
+                self.get_logger().info(f"Triangle's centroid is ({triangle_center_x - x:.2f}, {triangle_center_y - y:.2f}) relative to top-left")
+
                 
                 pub_msg = BoundingBox2D()
                 # pub_msg.center = triangle_center_x
