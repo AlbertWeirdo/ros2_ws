@@ -26,7 +26,7 @@ class ImagePublisher(Node):
                 print('Can\'t receive frame. Exiting')
                 break
             
-            cv2.imshow('frame', frame)
+            # cv2.imshow('frame', frame)
 
             # convert the frame from opencv image to ros2 image
             ros2_image = self.bridge.cv2_to_imgmsg(frame)

@@ -64,9 +64,9 @@ class ObjectDetector(Node):
         masked = cv2.bitwise_and(self.image.cv2, self.image.cv2, mask = mask)
         
         
-        cv2.imshow('Before mask', self.image.cv2)
-        cv2.imshow('Mask', mask)
-        cv2.imshow('After mask', masked)
+        # cv2.imshow('Before mask', self.image.cv2)
+        # cv2.imshow('Mask', mask)
+        # cv2.imshow('After mask', masked)
         imageWithBoundingBox = self.findContour(mask)
         if imageWithBoundingBox is not None:
             cv2.imshow("Triangle Detection", imageWithBoundingBox)
@@ -79,7 +79,7 @@ class ObjectDetector(Node):
             
             # filter out noise
             area = cv2.contourArea(contour)
-            if area < 1000:
+            if area < 2000:
                continue
            
             # check if the contour is a triangle
@@ -111,6 +111,9 @@ class ObjectDetector(Node):
                 # cv2.imshow("Triangle Detection", self.image.cv2)
                 # cv2.waitKey(25)
                 return image
+            
+    
+        return self.image.cv2
             
                        
         

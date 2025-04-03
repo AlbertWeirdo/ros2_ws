@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'tracker = task_6.red_ball_tracker:main',
+            'test = task_6.test:main'
         ],
     },
 )
