@@ -55,7 +55,7 @@ class Navigation(Node):
         self.calc_time_pub = self.create_publisher(Float32, 'astar_time',10) #DO NOT MODIFY
 
         # Node rate
-        self.rate = self.create_rate(10)
+        # self.rate = self.create_rate(10)
         
         # read map
         # self.mp = MapProcessor('/home/albert/ros2_ws/src/task_4/maps/sync_classroom_map')
@@ -85,9 +85,9 @@ class Navigation(Node):
         @return None.
         """
         self.goal_pose = data
-        self.get_logger().info(
-            'goal_pose: {:.4f}, {:.4f}'.format(self.goal_pose.pose.position.x, self.goal_pose.pose.position.y))
-        print('goal_pose: {:.4f}, {:.4f}'.format(self.goal_pose.pose.position.x, self.goal_pose.pose.position.y))
+        # self.get_logger().info(
+            # 'goal_pose: {:.4f}, {:.4f}'.format(self.goal_pose.pose.position.x, self.goal_pose.pose.position.y))
+        # print('goal_pose: {:.4f}, {:.4f}'.format(self.goal_pose.pose.position.x, self.goal_pose.pose.position.y))
         
     def __ttbot_pose_cbk(self, data):
         """! Callback to catch the position of the vehicle.
@@ -95,9 +95,9 @@ class Navigation(Node):
         @return None.
         """
         self.ttbot_pose = data.pose
-        self.get_logger().info(
-            'ttbot_pose: {:.4f}, {:.4f}'.format(self.ttbot_pose.pose.position.x, self.ttbot_pose.pose.position.y))
-        print('ttbot_pose: {:.4f}, {:.4f}'.format(self.ttbot_pose.pose.position.x, self.ttbot_pose.pose.position.y))
+        # self.get_logger().info(
+            # 'ttbot_pose: {:.4f}, {:.4f}'.format(self.ttbot_pose.pose.position.x, self.ttbot_pose.pose.position.y))
+        # print('ttbot_pose: {:.4f}, {:.4f}'.format(self.ttbot_pose.pose.position.x, self.ttbot_pose.pose.position.y))
 
     
     def a_star_path_planner(self, start_pose, end_pose):        # should be in the Node frame
@@ -313,8 +313,8 @@ class Navigation(Node):
                 # return
             
             
-            print(f'ttbot_pose: {self.ttbot_pose.pose.position}')
-            print(f'goal_pose: {self.goal_pose.pose.position}')
+            # print(f'ttbot_pose: {self.ttbot_pose.pose.position}')
+            # print(f'goal_pose: {self.goal_pose.pose.position}')
           
             
             # 1. Create the path to follow
